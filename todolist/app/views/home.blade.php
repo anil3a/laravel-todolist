@@ -29,7 +29,7 @@
         </li>
    @endforeach
    </ul>
-  
+
    <div class="paginationItems">
     {{$items->links()}}
    </div>
