@@ -19,6 +19,17 @@ class RemindersController extends Controller {
 	 */
 	public function postRemind()
 	{
+        $rules =  array(
+            'email' => 'required|email'
+        );
+
+        $validator = Validator::make(Input::all(), $rules);
+
+        if($validator->fails())
+        {
+            return Redirect::route('password.remind')->withErrors($validator);
+        }
+
 		switch ($response = Password::remind(Input::only('email')))
 		{
 			case Password::INVALID_USER:

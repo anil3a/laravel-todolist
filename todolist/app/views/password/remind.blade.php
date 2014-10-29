@@ -2,18 +2,19 @@
 
 @section('content')
     <div class="loginForm">
-        <form action="{{ action('RemindersController@postRemind') }}" method="POST">
 
-            @if( isset($error ) )
-            <div class="error">
-                {{ $error }}
-            </div>
+        {{ Form::open(array('action'=> 'password.remind', 'method' => "POST" ))  }}
+            @if( isset($errors ) )
+                @foreach( $errors->all() as $error)
+                    <p class="error">{{ $error }}</p>
+                @endforeach
             @endif
 
-            <input type="email" name="email">
+            <input type="email" name="email" required="required">
             <a href="{{URL::route('login')}}" class="Ralign smallFont forgotdiv">Back to login</a>
             <input type="submit" value="Send Reminder">
-        </form>
+        {{ Form::close() }}
+
      </div>
 
 @endsection
