@@ -1,6 +1,6 @@
 @extends('layouts.default')
 @section('content')
-   <h1>Your Items <a href="{{ URL::route('logout') }}" class="smallFont Ralign">Logout</a> <a href="/new" class="smallFont Ralign">New Task</a></h1>
+   <h1>Your Tasks <a href="{{ URL::route('logout') }}" class="smallFont Ralign">Logout</a> <a href="{{ URL::route('new') }}" class="smallFont Ralign">New Task</a></h1>
 
    <ul>
    @foreach($tasks as $task)
@@ -30,7 +30,7 @@
    @endforeach
    </ul>
 
-   <div class="paginationItems">
+   <div class="paginationTasks">
     {{$tasks->links()}}
    </div>
 
