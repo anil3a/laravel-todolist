@@ -18,6 +18,17 @@ body{
     clear: both;
 }
 
+.errors {
+    color: #aa0000;
+    margin: 0 0 10px 0;
+}
+
+.error {
+    color: #aa0000;
+    margin: 0 0 10px 0;
+    font-size: 11px;
+}
+
 .container {
     width: 60%;
     max-width: 300px;
@@ -92,11 +103,6 @@ a:hover {
     text-decoration: underline;
 }
 
-.error {
-    color: #aa0000;
-    margin: 0 0 10px 0;
-    font-size: 11px;
-}
 
 
 form input.inliner {
@@ -112,7 +118,7 @@ form input.inliner {
     text-align: center;
     width: 100%;
     display: block;
-    margin-top: 5px;
+    margin-top: ;
 }
 
 .paginationItems .pagination li {
