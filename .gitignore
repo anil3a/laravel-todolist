@@ -12,3 +12,9 @@ Thumbs.db
 
 app/config/local
 app/config/mail.php
+app/config/database.php
+
+ztodo.local-error.log
+
+
+
