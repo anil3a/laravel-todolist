@@ -1,13 +1,13 @@
 <?php
 
 
+
 /**
  * User: Anil
  * Date: 20/10/2014
  * Time: 10:50 AM
  * User Model
  */
-
 use Illuminate\Auth\UserTrait;
 use Illuminate\Auth\UserInterface;
 use Illuminate\Auth\Reminders\RemindableTrait;
