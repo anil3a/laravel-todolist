@@ -1,18 +1,18 @@
 <?php
 /**
- * ItemsTableSeeder Seeder Class
+ * TasksTableSeeder Seeder Class
  * User: Anil
  * Date: 20/10/2014
  * Time: 9:14 AM
  */
 
-class ItemsTableSeeder extends Seeder {
+class TasksTableSeeder extends Seeder {
 
     public function run()
     {
-        DB::table('items')->delete();
+        DB::table('tasks')->delete();
 
-        $items = array(
+        $tasks = array(
             array(
                 'owner_id'     => 1,
                 'name'         => 'Pick a milk',
@@ -31,7 +31,7 @@ class ItemsTableSeeder extends Seeder {
 
         );
 
-        DB::table('items')->insert($items);
+        DB::table('tasks')->insert($tasks);
     }
 
 } 

@@ -18,7 +18,6 @@ body{
     clear: both;
 }
 
-<<<<<<< HEAD
 .errors {
     color: #aa0000;
     margin: 0 0 10px 0;
@@ -30,11 +29,9 @@ body{
     font-size: 11px;
 }
 
-=======
->>>>>>> 9ea815755adc10c1febc4aed39556207c4c0607c
 .container {
     width: 60%;
-    max-width: 300px;
+    max-width: 500px;
     margin: 0 auto;
     background: #ffffff;
     border: 1px solid #cccccc;
@@ -106,16 +103,6 @@ a:hover {
     text-decoration: underline;
 }
 
-<<<<<<< HEAD
-=======
-.error {
-    color: #aa0000;
-    margin: 0 0 10px 0;
-    font-size: 11px;
-}
->>>>>>> 9ea815755adc10c1febc4aed39556207c4c0607c
-
-
 form input.inliner {
     display: inline;
 }
@@ -129,11 +116,7 @@ form input.inliner {
     text-align: center;
     width: 100%;
     display: block;
-<<<<<<< HEAD
-    margin-top: ;
-=======
     margin-top: 5px;
->>>>>>> 9ea815755adc10c1febc4aed39556207c4c0607c
 }
 
 .paginationItems .pagination li {

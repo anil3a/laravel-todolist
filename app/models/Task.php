@@ -9,7 +9,7 @@
 
 Class Task extends Eloquent {
 
-    protected $table = "items";
+    protected $table = "tasks";
 
     public function mark()
     {

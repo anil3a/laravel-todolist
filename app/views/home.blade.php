@@ -3,27 +3,27 @@
    <h1>Your Items <a href="{{ URL::route('logout') }}" class="smallFont Ralign">Logout</a> <a href="/new" class="smallFont Ralign">New Task</a></h1>
 
    <ul>
-   @foreach($items as $item)
+   @foreach($tasks as $task)
         <li>
             {{ Form::open() }}
                 <input
                 type="checkbox"
                 class="inliner"
                 name="id"
-                value="{{ $item->id }}"
-                {{ $item->done ? "checked" : "" }}
+                value="{{ $task->id }}"
+                {{ $task->done ? "checked" : "" }}
                 onclick="this.form.submit()"
                 >
 
                 <input
                 type="hidden"
                 name="id"
-                value="{{ $item->id }}"
+                value="{{ $task->id }}"
                 >
 
-                {{ e($item->name) }}
+                {{ e($task->name) }}
 
-                <a href="{{URL::route('delete', $item->id)}}">(x)</a>
+                <a href="{{URL::route('delete', $task->id)}}">(x)</a>
 
             {{ Form::close() }}
         </li>
@@ -31,7 +31,7 @@
    </ul>
 
    <div class="paginationItems">
-    {{$items->links()}}
+    {{$tasks->links()}}
    </div>
 
 
