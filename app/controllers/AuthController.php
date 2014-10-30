@@ -1,9 +1,9 @@
 <?php
 /**
- * Created by PhpStorm.
  * User: Anil
  * Date: 20/10/2014
  * Time: 9:22 AM
+ * Auth Controller
  */
 
 class AuthController extends Controller {
