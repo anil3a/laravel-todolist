@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateItemTable extends Migration {
+class CreateTasksTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,7 +12,7 @@ class CreateItemTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('items', function( Blueprint $table)
+		Schema::create('tasks', function( Blueprint $table)
         {
             $table->increments('id');
             $table->integer('owner_id');
@@ -29,7 +29,7 @@ class CreateItemTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('items');
+		Schema::drop('tasks');
 	}
 
 }

@@ -12,7 +12,7 @@
 */
 
 Route::bind('task', function($value, $route){
-    return Item::where('id', $value)->first();
+    return Task::where('id', $value)->first();
 });
 
 

@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://todolist.advtechcompany.com/',
+	'url' => 'your-url',
 
 	/*
 	|--------------------------------------------------------------------------

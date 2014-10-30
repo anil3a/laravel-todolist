@@ -67,11 +67,11 @@ App::down(function()
 	return Response::make("Be right back!", 503);
 });
 
+
 App::missing(function($exception)
 {
     return Response::view('error.missing', array(), 404);
 });
-
 
 /*
 |--------------------------------------------------------------------------

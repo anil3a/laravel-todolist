@@ -24,7 +24,7 @@ class AddColumnAdminInUserTable extends Migration {
 	 */
 	public function down()
 	{
-		Schea::table('users', function($table){
+		Schema::table('users', function($table){
             $table->dropColumn('admin');
         });
 	}

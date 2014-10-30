@@ -31,7 +31,7 @@ body{
 
 .container {
     width: 60%;
-    max-width: 300px;
+    max-width: 500px;
     margin: 0 auto;
     background: #ffffff;
     border: 1px solid #cccccc;
@@ -91,7 +91,7 @@ ul {
 }
 
 ul li {
-    line-height: 40px;
+    line-height: 25px;
 }
 
 a:link, a:visited {
@@ -103,8 +103,6 @@ a:hover {
     text-decoration: underline;
 }
 
-
-
 form input.inliner {
     display: inline;
 }
@@ -113,15 +111,15 @@ form input.inliner {
     margin-top: 6px;
 }
 
-.paginationItems {
+.paginationTasks {
     border-top: 1px solid #cccccc;
     text-align: center;
     width: 100%;
     display: block;
-    margin-top: ;
+    margin-top: 5px;
 }
 
-.paginationItems .pagination li {
+.paginationTasks .pagination li {
     display: inline;
     padding: 2px;
     margin: 5px;
