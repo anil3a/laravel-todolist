@@ -19,10 +19,6 @@ class AuthController extends Controller {
 
         $validator = Validator::make(Input::all(), $rules);
 
-       /* echo "<pre>";
-        print_r($validator);
-        die();*/
-
         if($validator->fails())
         {
             return Redirect::route('login')->withErrors($validator);
