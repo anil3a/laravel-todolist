@@ -26,7 +26,7 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(array(
 
-	'local' => array('Prz'),
+	'local' => array('Prz', 'asprz'),
 	'global' => array('http://todolist.advtechcompany.com'),
 
 ));
