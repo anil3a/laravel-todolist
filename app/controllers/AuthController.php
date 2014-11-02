@@ -45,4 +45,14 @@ class AuthController extends Controller {
         return Redirect::route('login');
     }
 
+    public function getRegister()
+    {
+        return View::make('auth.signup');
+    }
+
+    public function postRegister()
+    {
+        return View::make('auth.signup');
+    }
+
 } 
