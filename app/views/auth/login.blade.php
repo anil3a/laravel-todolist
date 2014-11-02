@@ -2,9 +2,9 @@
 
 @section('content')
 
+    <h1>Things To Do</h1>
+
     <div class="loginForm">
-        <div>Welcome to Simple To Do Task</div>
-        <br>
         <div>
 
             {{ Form::open() }}
@@ -15,13 +15,44 @@
                      @endforeach
                 @endif
 
-                <input type="text" name="username" placeholder=" username" />
-                <input type="password" name="password" placeholder=" ********" />
-                <div class="Ralign smallFont forgotdiv"><a href="{{URL::route('password.remind')}}">Forgot Password</a></div>
-                <input type="submit" class="submit" value="login"/>
+                <div class="relative">
+                    <img src="/img/user_icon.png" class="loginicon">
+                    <input type="text" name="username" placeholder=" user@gmail.com" class="inlineinput" />
+                </div>
+
+                <div class="clear"></div>
+                <br>
+
+                <div class="relative">
+                    <img src="/img/password_icon.png" class="loginicon">
+                    <input type="password" name="password" placeholder=" ********" class="inlineinput" />
+                </div>
+
+                <div class="clear"></div>
+                <br>
+
+                <div>
+                    <input type="checkbox" name="remember"> Remember Me
+                    <input type="submit" class="Ralign submit" value="login"/>
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="smallFont forgotdiv center">
+                    <a href="{{URL::route('password.remind')}}">Forgot Password</a>
+                    &nbsp; | &nbsp;
+                    <a href="/signup">create an account</a>
+                </div>
+                
+                
+
             {{ Form::close() }}
         </div>
 
 
     </div>
+
+
+
+
 @endsection
