@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-    <h1>Create New Task  <a href="{{ URL::route('home') }}" class="smallFont Ralign" title="Btack to home page">back to home</a></h1>
+    <h1>Create New Task  <a href="{{ URL::route('home') }}" class="smallFont Ralign" title="Back to home page">back to home</a></h1>
 
      @foreach( $errors->all() as $error)
             <p class="error">{{ $error }}</p>
