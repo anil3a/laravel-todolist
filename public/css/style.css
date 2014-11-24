@@ -93,6 +93,9 @@ form .submit {
     width: 70px;
 }
 
+form .submit115 {
+    width: 115px;
+}
 
 form input:last-child {
     margin: 0;

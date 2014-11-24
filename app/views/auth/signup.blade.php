@@ -2,10 +2,10 @@
 
 @section('content')
 
+    <h1 class="center">Things To Do</h1>
+    
     <div class="loginForm">
-        <div>Things To Do Task</div>
-        <br>
-        <p>Sign Up</p>
+    
         <div>
 
             {{ Form::open() }}
@@ -15,13 +15,44 @@
                          <p class="error">{{ $error }}</p>
                      @endforeach
                 @endif
+                <div class="relative">
+                    <img src="/img/name_icon.png" class="loginicon">
+                     <input type="text" name="name" placeholder=" your name"  class="inlineinput" /> 
+                </div>
 
-                <input type="text" name="name" placeholder=" Your Name" />
-                <input type="email" name="email" placeholder=" Email Address" />
-                <input type="password" name="password" placeholder=" ********" />
-                <input type="password" name="rpassword" placeholder=" ********" />
+                <div class="clear"></div>
+                <br>
 
-                <input type="submit" class="submit" value="Signup"/>
+                <div class="relative">
+                    <img src="/img/user_icon.png" class="loginicon">
+                    <input type="text" name="username" placeholder=" user@email.com" class="inlineinput" />
+                </div>
+
+                <div class="clear"></div>
+                <br>
+
+
+               <div class="relative">
+                    <img src="/img/password_icon.png" class="loginicon">
+                    <input type="password" name="password" placeholder=" password" class="inlineinput" />
+                </div>
+
+                <div class="clear"></div>
+                <br>
+
+                <div class="relative">
+                    <img src="/img/password_icon.png" class="loginicon">
+                    <input type="password" name="rpassword" placeholder=" confirm password" class="inlineinput" />
+
+                </div>
+
+                <div class="clear"></div>
+                
+                <div class="forgotdiv">
+                    <a href="/login" class="smallFont">Back</a>
+                    <input type="submit" class="Ralign submit" value="signup"/>
+                </div>
+               
             {{ Form::close() }}
         </div>
 

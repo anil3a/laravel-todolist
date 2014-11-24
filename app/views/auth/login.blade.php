@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h1>Things To Do</h1>
+    <h1 class="center">Things To Do</h1>
 
     <div class="loginForm">
         <div>
@@ -17,7 +17,7 @@
 
                 <div class="relative">
                     <img src="/img/user_icon.png" class="loginicon">
-                    <input type="text" name="username" placeholder=" user@gmail.com" class="inlineinput" />
+                    <input type="text" name="username" placeholder=" user@email.com" class="inlineinput" />
                 </div>
 
                 <div class="clear"></div>
@@ -25,7 +25,7 @@
 
                 <div class="relative">
                     <img src="/img/password_icon.png" class="loginicon">
-                    <input type="password" name="password" placeholder=" ********" class="inlineinput" />
+                    <input type="password" name="password" placeholder=" password" class="inlineinput" />
                 </div>
 
                 <div class="clear"></div>
