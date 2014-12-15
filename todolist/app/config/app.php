@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => '',
+	'url' => 'http://todo.advtechcompany.com',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ return array(
 	|
 	*/
 
-	'key' => 'PO0wUivGV3jXx2mnCh2UBk19EoNnyZ8T',
+	'key' => 'PO0wUivGV3jXx2mnCh2UBk19EoNnyZ8Tt',
 
 	'cipher' => MCRYPT_RIJNDAEL_128,
 

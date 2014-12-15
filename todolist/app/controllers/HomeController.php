@@ -4,7 +4,7 @@ class HomeController extends BaseController {
 
 	public function getIndex()
 	{
-        $items = Auth::user()->items;
+        $items = Auth::user()->items()->paginate(6);
 		return View::make('home')->with('items', $items);
 	}
 
