@@ -27,6 +27,9 @@ Route::get('/delete/{task}', array( 'as' => 'delete', 'uses' => 'HomeController@
 Route::get('/login', array( 'as' => 'login', 'uses' => 'AuthController@getlogin' ));
 Route::post('login', array( 'uses' => 'AuthController@postLogin' ))->before('csrf');
 
+Route::get('/signup', array( 'as' => 'signup', 'uses' => 'AuthController@getRegister' ));
+Route::post('signup', array( 'uses' => 'AuthController@postRegister' ))->before('csrf');
+
 Route::get('logout', array( 'as' => 'logout', 'uses'=>'AuthController@logout'));
 
 Route::get('/admin', array( 'as' => 'admin', 'uses' => 'AdminController@getIndex' ) );

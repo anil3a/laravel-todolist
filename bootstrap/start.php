@@ -26,14 +26,11 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(array(
 
-//	'local' => array('Prz'),
-//<<<<<<< HEAD:todolist/bootstrap/start.php
 	'production' => array('todo.advtechcompany.com'),
-//=======
+	'local' => array('Prz', 'asprz'),
 	'global' => array('http://todolist.advtechcompany.com'),
-//>>>>>>> 2f79f47280d9e30a51f024367a8498326c143c28:bootstrap/start.php
 
-));
+;
 
 /*
 |--------------------------------------------------------------------------
