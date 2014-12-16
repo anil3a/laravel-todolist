@@ -1,0 +1,15 @@
+<?php $__env->startSection('content'); ?>
+    <h1>Create New Task</h1>
+
+     <?php foreach( $errors->all() as $error): ?>
+            <p class="error"><?php echo $error; ?></p>
+        <?php endforeach; ?>
+
+    <?php echo Form::open(); ?>
+
+        <input type="text" name="name" placeholder="The name of the task">
+        <input type="submit" value="Create">
+    <?php echo Form::close(); ?>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.default', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

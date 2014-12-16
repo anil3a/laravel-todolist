@@ -1,0 +1,15 @@
+<?php $__env->startSection('content'); ?>
+    <div class="loginForm">
+    <h1>Enter your new password</h1>
+    <form action="<?php echo action('RemindersController@postReset'); ?>" method="POST">
+        <input type="hidden" name="token" value="<?php echo $token; ?>">
+        <input type="email" name="email" placeholder=" email address" required="required">
+        <input type="password" name="password" placeholder=" password" required="required" autocomplete="off">
+        <input type="password" name="password_confirmation" placeholder=" confirm password" required="required" autocomplete="off">
+        <div class="Ralign smallFont forgotdiv"><a href="<?php echo URL::route('login'); ?>">Back to login</a></div>
+        <input type="submit" value="Reset Password">
+    </form>
+    </div>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.default', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

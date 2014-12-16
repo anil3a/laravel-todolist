@@ -1,0 +1,37 @@
+<?php $__env->startSection('content'); ?>
+   <h1>Your Items <a href="<?php echo URL::route('logout'); ?>" class="smallFont Ralign">Logout</a> <a href="/new" class="smallFont Ralign">New Task</a></h1>
+
+   <ul>
+   <?php foreach($items as $item): ?>
+        <li>
+            <?php echo Form::open(); ?>
+
+                <input
+                type="checkbox"
+                class="inliner"
+                name="id"
+                value="<?php echo $item->id; ?>"
+                <?php echo $item->done ? "checked" : ""; ?>
+
+                onclick="this.form.submit()"
+                >
+
+                <input
+                type="hidden"
+                name="id"
+                value="<?php echo $item->id; ?>"
+                >
+
+                <?php echo e($item->name); ?>
+
+
+                <a href="<?php echo URL::route('delete', $item->id); ?>">(x)</a>
+
+            <?php echo Form::close(); ?>
+
+        </li>
+   <?php endforeach; ?>
+   </ul>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.default', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

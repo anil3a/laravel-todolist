@@ -1,0 +1,24 @@
+<?php $__env->startSection('content'); ?>
+
+    <div class="loginForm">
+        <div>Welcome to Simple To Do Task</div>
+        <br>
+        <div>
+            <?php foreach( $errors->all() as $error): ?>
+                <p class="error"><?php echo $error; ?></p>
+            <?php endforeach; ?>
+
+            <?php echo Form::open(); ?>
+
+                <input type="text" name="username" placeholder=" username" />
+                <input type="password" name="password" placeholder=" ********" />
+                <div class="Ralign smallFont forgotdiv"><a href="<?php echo URL::route('password.remind'); ?>">Forgot Password</a></div>
+                <input type="submit" class="submit" value="login"/>
+            <?php echo Form::close(); ?>
+
+        </div>
+
+
+    </div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.default', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

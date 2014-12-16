@@ -1,0 +1,19 @@
+<?php $__env->startSection('content'); ?>
+    <div class="loginForm">
+        <form action="<?php echo action('RemindersController@postRemind'); ?>" method="POST">
+
+            <?php if( isset($error ) ): ?>
+            <div class="error">
+                <?php echo $error; ?>
+
+            </div>
+            <?php endif; ?>
+
+            <input type="email" name="email">
+            <a href="<?php echo URL::route('login'); ?>" class="Ralign smallFont forgotdiv">Back to login</a>
+            <input type="submit" value="Send Reminder">
+        </form>
+     </div>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.default', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
